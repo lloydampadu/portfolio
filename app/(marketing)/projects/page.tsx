@@ -2,7 +2,6 @@ import BlogPostIndex from "@/app/component/BlogPostIndex";
 import Bounded from "@/app/component/Bounded";
 import Button from "@/app/component/Button";
 
-i;
 const contentItems = [
   {
     id: "my-blog-post",
