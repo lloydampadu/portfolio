@@ -1,4 +1,3 @@
-import Avatar from "./Avatar";
 import Bounded from "./Bounded";
 import Button from "./Button";
 import Heading from "./Heading";
@@ -16,7 +15,6 @@ const Biography = ({
   body,
   buttonLink,
   buttonText,
-  avatarSrc,
 }: BiographyProps): JSX.Element => {
   return (
     <Bounded>
@@ -30,11 +28,6 @@ const Biography = ({
         </div>
 
         <Button link={buttonLink} label={buttonText} />
-
-        {/* <Avatar
-          className="row-start-1 max-w-sm md:col-start-2 md:row-end-3"
-          imageSrc={avatarSrc}
-        /> */}
       </div>
     </Bounded>
   );

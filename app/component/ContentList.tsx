@@ -1,9 +1,9 @@
 // ContentList.tsx
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
 import { MdArrowOutward } from "react-icons/md";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -32,7 +32,7 @@ export default function ContentList({
   return (
     <>
       <ul ref={component} className="grid border-b border-b-slate-100">
-        {items.map((item, index) => (
+        {items.map((item) => (
           <li key={item.id} className="list-item ">
             <a
               href={`${item.url}`}

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Urbanist } from "next/font/google";
-import "./globals.css";
+import { Urbanist } from "next/font/google";
 import Header from "./component/Header";
+import "./globals.css";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 export const metadata: Metadata = {

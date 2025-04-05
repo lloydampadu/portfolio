@@ -1,16 +1,8 @@
-import Avatar from "@/app/component/Avatar";
 import BlogPostIndex from "@/app/component/BlogPostIndex";
 import Bounded from "@/app/component/Bounded";
 import Button from "@/app/component/Button";
 
-interface BiographyProps {
-  heading: string;
-  body: string;
-  buttonLink: string;
-  buttonText: string;
-  avatarSrc: string;
-}
-
+i;
 const contentItems = [
   {
     id: "my-blog-post",
@@ -31,7 +23,7 @@ const contentItems = [
   },
 ];
 
-const Projects = ({}: BiographyProps): JSX.Element => {
+const Projects = () => {
   return (
     <Bounded>
       <div className="grid gap-x-8 gap-y-6 md:grid-cols-[2fr,1fr]">
@@ -42,8 +34,6 @@ const Projects = ({}: BiographyProps): JSX.Element => {
         />
 
         <Button link="https://github.com/lloydampadu" label="Github" />
-
-        {/* <Avatar className="row-start-1 max-w-sm md:col-start-2 md:row-end-3" /> */}
       </div>
     </Bounded>
   );

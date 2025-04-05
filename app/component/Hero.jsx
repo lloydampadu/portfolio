@@ -40,7 +40,7 @@ const Hero = () => {
       });
 
       // Hover effects
-      letters.forEach((letter: any) => {
+      letters.forEach((letter) => {
         letter.addEventListener("mouseenter", () => {
           gsap.to(letter, {
             duration: 0.3,
@@ -68,7 +68,7 @@ const Hero = () => {
     return () => ctx.revert();
   }, []);
 
-  const renderAnimatedLetters = (name: string) => {
+  const renderAnimatedLetters = (name) => {
     return name.split("").map((letter, index) => (
       <span key={index} className="letter relative inline-block mx-0.5">
         <span className="gradient absolute inset-4 bg-gradient-to-tr from-red-400/30 to-blue-400/30 rounded-lg transform scale-75" />
