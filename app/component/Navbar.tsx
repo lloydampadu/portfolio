@@ -9,7 +9,6 @@ import Button from "./Button";
 import { usePathname } from "next/navigation";
 
 const NAV_ITEMS = [
-  { label: "Home", link: "/" },
   { label: "About", link: "/about" },
   { label: "Projects", link: "/projects" },
 ];
@@ -80,8 +79,12 @@ export default function NavBar() {
             </React.Fragment>
           ))}
           <li>
-            <Button link={CTA_LINK} label={CTA_LABEL} className="ml-3" />{" "}
-            hover:animate-vigorous-shake
+            <Button
+              link={CTA_LINK}
+              label={CTA_LABEL}
+              onClick={() => setOpen(false)}
+              className="ml-3"
+            />{" "}
           </li>
         </div>
         <DesktopMenu pathname={pathname} />
@@ -135,11 +138,7 @@ function DesktopMenu({ pathname }: { pathname: string }) {
         </React.Fragment>
       ))}
       <li>
-        <Button
-          link={CTA_LINK}
-          label={CTA_LABEL}
-          className="ml-3 hover:animate-vigorous-shake"
-        />
+        <Button link={CTA_LINK} label={CTA_LABEL} />
       </li>
     </div>
   );

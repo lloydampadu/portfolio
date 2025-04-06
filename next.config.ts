@@ -10,15 +10,3 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   eslint: {
-//     ignoreDuringBuilds: true, // Ignore ESLint errors and warnings during builds
-//   },
-//   typescript: {
-//     ignoreBuildErrors: true, // Ignores type errors during builds
-//   },
-// };
-
-// export default nextConfig;

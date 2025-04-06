@@ -179,3 +179,18 @@ body {
 .hover\:animate-vigorous-shake:hover {
   animation: vigorous-shake 0.8s ease-in-out infinite;
 }
+
+/* Hide scrollbar for all elements */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE/Edge */
+body {
+  -ms-overflow-style: none;
+}
