@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/next";
+
 export default function MarketingLayout({
   children,
 }: Readonly<{
@@ -5,7 +7,9 @@ export default function MarketingLayout({
 }>) {
   return (
     <div className="min-h-screen flex flex-col">
-      <main className="flex-1 "> {children}</main>
+      <main className="flex-1 ">
+        {children} <Analytics />
+      </main>
     </div>
   );
 }
