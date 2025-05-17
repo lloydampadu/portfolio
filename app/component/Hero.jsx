@@ -94,7 +94,7 @@ const Hero = () => {
               {renderAnimatedLetters("Lloyd")}
             </span>
             <span className="block bg-gradient-to-tr from-red-500 via-red-200 to-red-500 bg-clip-text text-2xl font-bold uppercase tracking-[.2em] text-transparent opacity-100 md:text-4xl mt-8">
-              Junior Developer
+              Private Tutor and Junior Developer
             </span>
           </h1>
         </div>
