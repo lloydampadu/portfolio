@@ -4,8 +4,9 @@ import Header from "./component/Header";
 import "./globals.css";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
+
 export const metadata: Metadata = {
-  title: "Sasu lloyd",
+  title: "Sasu Lloyd",
   description: "Private Tutor and Junior Developer",
 };
 
@@ -21,4 +22,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
+  );
 }
