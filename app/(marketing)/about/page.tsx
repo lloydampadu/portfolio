@@ -33,7 +33,7 @@ const About = () => {
       As a dedicated private tutor, I have guided numerous students through their academic journeys, specializing in SAT and WASSCE preparations. My approach involves tailoring lesson plans to individual learning styles, ensuring that each student grasps complex concepts with ease.
     </p>
     <p>
-      Beyond standardized test preparation, I've worked closely with young learners, including children as young as five, fostering foundational skills in mathematics and computer science. My commitment to education is evident in the measurable improvements and confidence my students gain.
+      Beyond standardized test preparation, I've worked closely with young learners, including children, fostering foundational skills in mathematics and computer science. My commitment to education is evident in the measurable improvements and confidence my students gain.
     </p>
     <p>
       In addition to tutoring, I have engaged in community outreach programs, conducting workshops and seminars aimed at bridging educational gaps and promoting STEM education among underrepresented groups.
