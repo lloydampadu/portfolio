@@ -22,11 +22,12 @@ export default function Button({
   return (
     <Link
       href={link}
+      onClick={onClick}
       className={clsx(
         "group relative flex w-fit items-center justify-center overflow-hidden rounded-md border-2 border-slate-900 bg-slate-50 px-4 py-2 font-bold transition-transform ease-out hover:scale-105",
+        "text-slate-900 dark:text-slate-100 dark:border-slate-100 dark:bg-transparent", // ✅ adaptive text color
         className
       )}
-      onClick={onClick} // Pass the onClick handler here
     >
       <span
         className={clsx(
