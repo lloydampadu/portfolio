@@ -20,6 +20,15 @@ const contentItems = [
     image: "/project1.jpg",
     url: "http://changer-main-main.vercel.app",
   },
+  {
+    id: "new-blog-post",
+    title: "How I Built a Responsive Portfolio",
+    description: "A breakdown of design and development choices",
+    tags: ["portfolio", "frontend"],
+    image: "/blog2.jpg",
+    url: "https://your-portfolio-blog-link.com",
+    date: "2024-04-10",
+  },
 ];
 
 const Projects = () => {

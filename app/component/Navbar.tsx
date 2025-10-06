@@ -9,7 +9,8 @@ import Button from "./Button";
 import { usePathname } from "next/navigation";
 
 const NAV_ITEMS = [
-  { label: "About", link: "/about" },
+  { label: "About Me", link: "/about" },
+  { label: "Blog", link: "/blog" },
   { label: "Projects", link: "/projects" },
 ];
 

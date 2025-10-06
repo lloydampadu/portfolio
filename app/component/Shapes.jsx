@@ -6,25 +6,35 @@ import { ContactShadows, Float, Environment } from "@react-three/drei";
 import { Suspense, useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 
+// ---------------- Loader Component ----------------
+function Loader() {
+  return (
+    <div className="absolute inset-0 flex items-center justify-center z-10 bg-black/20 backdrop-blur-sm">
+      <div className="flex flex-col items-center space-y-3">
+        <div className="h-10 w-10 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin" />
+        <p className="text-sm text-gray-700 font-medium">Loading shapes...</p>
+      </div>
+    </div>
+  );
+}
+
+// ---------------- Main Shapes Component ----------------
 export function Shapes() {
   const scrollYRef = useRef(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      scrollYRef.current = window.scrollY / window.innerHeight;
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   return (
-    <div className="row-span-1 row-start-1 -mt-9 aspect-square md:col-span-1 md:col-start-2 md:mt-0 z-0 ">
+    <div className="relative row-span-1 row-start-1 -mt-9 aspect-square md:col-span-1 md:col-start-2 md:mt-0 z-0">
+      {/* Show loader until scene finishes loading */}
+      {!isLoaded && <Loader />}
+
       <Canvas
         className="z-0"
         shadows
         gl={{ antialias: false }}
         dpr={[1, 1.5]}
         camera={{ position: [0, 0, 25], fov: 30, near: 1, far: 40 }}
+        onCreated={() => setIsLoaded(true)} // mark as loaded
       >
         <Suspense fallback={null}>
           <Geometries scrollYRef={scrollYRef} />
@@ -42,6 +52,7 @@ export function Shapes() {
   );
 }
 
+// ---------------- Geometries ----------------
 function Geometries({ scrollYRef }) {
   const geometries = [
     {
@@ -87,6 +98,7 @@ function Geometries({ scrollYRef }) {
   ));
 }
 
+// ---------------- Geometry ----------------
 function Geometry({ r, position, geometry, materials, scrollYRef }) {
   const groupRef = useRef();
   const [visible, setVisible] = useState(false);
