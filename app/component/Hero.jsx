@@ -93,7 +93,7 @@ const Hero = () => {
             <span className="-mt-[.2em] block text-slate-300">
               {renderAnimatedLetters("Lloyd")}
             </span>
-            <span className="block bg-gradient-to-tr from-red-500 via-red-200 to-red-500 bg-clip-text text-2xl font-bold uppercase tracking-[.2em] text-transparent opacity-100 md:text-4xl mt-8">
+            <span className="block bg-gradient-to-tr from-cyan-400 via-blue-500 to-purple-500 dark:from-pink-500 dark:via-purple-400 dark:to-cyan-400 bg-clip-text text-transparent text-2xl font-bold uppercase tracking-[.2em] opacity-100 md:text-4xl mt-8 drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]">
               Private Tutor and Junior Developer
             </span>
           </h1>
