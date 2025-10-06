@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
+import { Sora } from "next/font/google";
 import Header from "./component/Header";
 import "./globals.css";
 
-const urbanist = Urbanist({ subsets: ["latin"] });
+const sora = Sora({
+  subsets: ["latin"],
+  variable: "--font-sora",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Sasu Lloyd",
@@ -16,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="min-h-screen">
-      <body className={urbanist.className}>
+    <html lang="en" className={`${sora.variable} min-h-screen`}>
+      <body className={`${sora.className} bg-white text-gray-900`}>
         <Header />
         {children}
       </body>
