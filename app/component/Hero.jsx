@@ -87,10 +87,10 @@ const Hero = () => {
             className="mb-8 text-[clamp(3rem,15vmin,20rem)] font-extrabold leading-none tracking-tighter"
             aria-label="sasu lloyd"
           >
-            <span className="block text-slate-100">
+            <span className="block text-black dark:text-slate-100">
               {renderAnimatedLetters("Sasu")}
             </span>
-            <span className="-mt-[.2em] block text-slate-300">
+            <span className="-mt-[.2em] block text-black dark:text-slate-300">
               {renderAnimatedLetters("Lloyd")}
             </span>
             <span className="block bg-gradient-to-tr from-cyan-400 via-blue-500 to-purple-500 dark:from-pink-500 dark:via-purple-400 dark:to-cyan-400 bg-clip-text text-transparent text-2xl font-bold uppercase tracking-[.2em] opacity-100 md:text-4xl mt-8 drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]">
