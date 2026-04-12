@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/* Custom background gradient — purple-tinted */
+.background-gradient {
+  background: radial-gradient(
+    ellipse at 60% 40%,
+    rgba(159, 125, 248, 0.12) 0%,
+    rgba(10, 10, 20, 0) 65%
+  );
+}
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+body {
+  background: #0a0a14;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+}
+
+/* Letter animation */
+.letter {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  will-change: transform, opacity, color;
+}
+
+/* Prose styling */
+.prose-invert {
+  color: #a1a1b5;
+}
+.prose-invert strong {
+  color: #e4e4ed;
+}
+.prose-invert a {
+  color: #9f7df8;
+}
+
+/* Terminal cursor blink */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Glow effect for accent elements */
+.glow-purple {
+  box-shadow: 0 0 40px rgba(159, 125, 248, 0.15);
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+.animate-shimmer {
+  animation: shimmer 1.5s infinite;
+}
+
+/* Floating animation for hero graphic */
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.animate-float {
+  animation: float-gentle 6s ease-in-out infinite;
+}
