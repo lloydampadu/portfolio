@@ -16,7 +16,11 @@ export default function Heading({
   return (
     <Comp
       className={clsx(
+<<<<<<< HEAD
         "font-[family-name:var(--font-heading)] font-bold leading-tight tracking-tight text-[#e4e4ed]",
+=======
+        "font-bold leading-tight tracking-tight  text-slate-300",
+>>>>>>> d9a8fcb28aa01cc1a71bfec332e0550747bb66ae
         size === "xl" && "text-7xl md:text-9xl",
         size === "lg" && "text-6xl md:text-8xl",
         size === "md" && "text-5xl md:text-6xl",
