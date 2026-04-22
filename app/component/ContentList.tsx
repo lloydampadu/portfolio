@@ -1,17 +1,8 @@
-<<<<<<< HEAD
 "use client";
 
 import React, { useRef, useState, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-=======
-// ContentList.tsx
-"use client";
-
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef } from "react";
->>>>>>> d9a8fcb28aa01cc1a71bfec332e0550747bb66ae
 import { MdArrowOutward } from "react-icons/md";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -19,10 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 type ContentItem = {
   id: string;
   title: string;
-<<<<<<< HEAD
   description: string;
-=======
->>>>>>> d9a8fcb28aa01cc1a71bfec332e0550747bb66ae
   tags: string[];
   image?: string;
   url: string;
@@ -40,7 +28,6 @@ export default function ContentList({
   viewMoreText = "Read More",
 }: ContentListProps) {
   const component = useRef(null);
-<<<<<<< HEAD
   const itemsRef = useRef<Array<HTMLLIElement | null>>([]);
   const revealRef = useRef<HTMLDivElement>(null);
   const [currentItem, setCurrentItem] = useState<null | number>(null);
@@ -148,26 +135,11 @@ export default function ContentList({
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col justify-between border-t border-t-[#1e1e30] py-10 text-[#a1a1b5] md:flex-row"
-=======
-
-  return (
-    <>
-      <ul ref={component} className="grid border-b border-b-slate-100">
-        {items.map((item) => (
-          <li key={item.id} className="list-item ">
-            <a
-              href={`${item.url}`}
-              className="flex flex-col justify-between border-t border-t-slate-100 py-10 text-slate-200 md:flex-row"
->>>>>>> d9a8fcb28aa01cc1a71bfec332e0550747bb66ae
               aria-label={item.title}
             >
               <div className="flex flex-col">
                 <span className="text-3xl font-bold">{item.title}</span>
-<<<<<<< HEAD
                 <div className="flex flex-wrap gap-3 text-[#9f7df8] mt-1">
-=======
-                <div className="flex gap-3 text-yellow-400">
->>>>>>> d9a8fcb28aa01cc1a71bfec332e0550747bb66ae
                   {item.tags.map((tag, tagIndex) => (
                     <span key={tagIndex} className="text-lg font-bold">
                       {tag}
@@ -181,7 +153,6 @@ export default function ContentList({
             </a>
           </li>
         ))}
-<<<<<<< HEAD
 
         {/* Hover reveal image */}
         <div
@@ -194,8 +165,6 @@ export default function ContentList({
           }}
           ref={revealRef}
         />
-=======
->>>>>>> d9a8fcb28aa01cc1a71bfec332e0550747bb66ae
       </ul>
     </>
   );

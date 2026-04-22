@@ -1,5 +1,4 @@
 import Hero from "../component/Hero";
-<<<<<<< HEAD
 import Biography from "../component/Biography";
 import TechList from "../component/TechList";
 import CaseStudy from "../component/CaseStudy";
@@ -37,14 +36,11 @@ const PROJECTS = [
     url: "https://bloomingandbeyond.com",
   },
 ];
-=======
->>>>>>> d9a8fcb28aa01cc1a71bfec332e0550747bb66ae
 
 export default function Home() {
   return (
     <div>
       <Hero />
-<<<<<<< HEAD
       <Biography
         heading="About Me"
         body={`
@@ -78,8 +74,6 @@ export default function Home() {
           <Button link="https://github.com/lloydampadu" label="Github" />
         </div>
       </Bounded>
-=======
->>>>>>> d9a8fcb28aa01cc1a71bfec332e0550747bb66ae
     </div>
   );
 }

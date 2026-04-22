@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-<<<<<<< HEAD
 import { Space_Grotesk, Inter } from "next/font/google";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
@@ -14,20 +13,10 @@ const spaceGrotesk = Space_Grotesk({
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-body",
-=======
-import { Sora } from "next/font/google";
-import Header from "./component/Header";
-import "./globals.css";
-
-const sora = Sora({
-  subsets: ["latin"],
-  variable: "--font-sora",
->>>>>>> d9a8fcb28aa01cc1a71bfec332e0550747bb66ae
   display: "swap",
 });
 
 export const metadata: Metadata = {
-<<<<<<< HEAD
   title: "Lloyd Ampadu — Fullstack Engineer",
   description:
     "Fullstack software engineer specialising in Next.js, TypeScript, PostgreSQL, and Node.js. Built production e-commerce infrastructure with Mobile Money payment integration.",
@@ -47,10 +36,6 @@ export const metadata: Metadata = {
       "Fullstack software engineer based in Accra, Ghana. Next.js, TypeScript, PostgreSQL.",
     type: "website",
   },
-=======
-  title: "Sasu Lloyd",
-  description: "Private Tutor and Junior Developer",
->>>>>>> d9a8fcb28aa01cc1a71bfec332e0550747bb66ae
 };
 
 export default function RootLayout({
@@ -59,7 +44,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-<<<<<<< HEAD
     <html
       lang="en"
       className={`${spaceGrotesk.variable} ${inter.variable} min-h-screen`}
@@ -71,12 +55,6 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-=======
-    <html lang="en" className={`${sora.variable} min-h-screen`}>
-      <body className={`${sora.className} bg-white text-gray-900`}>
-        <Header />
-        {children}
->>>>>>> d9a8fcb28aa01cc1a71bfec332e0550747bb66ae
       </body>
     </html>
   );
