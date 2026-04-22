@@ -1,7 +1,15 @@
 {
   "compilerOptions": {
     "target": "ES2017",
+<<<<<<< HEAD
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+=======
     "lib": ["dom", "dom.iterable", "esnext"],
+>>>>>>> d9a8fcb28aa01cc1a71bfec332e0550747bb66ae
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -11,7 +19,11 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
+<<<<<<< HEAD
+    "jsx": "react-jsx",
+=======
     "jsx": "preserve",
+>>>>>>> d9a8fcb28aa01cc1a71bfec332e0550747bb66ae
     "incremental": true,
     "plugins": [
       {
@@ -19,7 +31,13 @@
       }
     ],
     "paths": {
+<<<<<<< HEAD
+      "@/*": [
+        "./*"
+      ]
+=======
       "@/*": ["./*"]
+>>>>>>> d9a8fcb28aa01cc1a71bfec332e0550747bb66ae
     }
   },
   "include": [
@@ -27,7 +45,16 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
+<<<<<<< HEAD
+    "app/component/Hero.jsx",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+=======
     "app/component/Hero.jsx"
   ],
   "exclude": ["node_modules"]
+>>>>>>> d9a8fcb28aa01cc1a71bfec332e0550747bb66ae
 }
